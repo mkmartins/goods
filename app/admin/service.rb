@@ -1,4 +1,5 @@
 ActiveAdmin.register Service do
+  permit_params :image
 
 
   # See permitted parameters documentation:
