@@ -1,4 +1,5 @@
 ActiveAdmin.register Good do
+  permit_params :image
 
 
   # See permitted parameters documentation:
