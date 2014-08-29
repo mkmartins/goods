@@ -29,6 +29,7 @@ class GoodsController < ApplicationController
   # POST /goods.json
   def create
     @good = Good.new(good_params)
+    @good.user = current_user
 
     respond_to do |format|
       if @good.save
